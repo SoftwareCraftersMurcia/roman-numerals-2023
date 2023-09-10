@@ -1,0 +1,4 @@
+/vendor
+/coverage
+*.cache
+composer.lock
