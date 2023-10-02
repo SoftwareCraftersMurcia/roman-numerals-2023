@@ -1,3 +1,43 @@
+# Kata
+
+![image](https://github.com/SoftwareCraftersMurcia/roman-numerals-2023/assets/62811755/0fda1283-ea7d-4ae3-9346-431d58990cc7)
+
+## Las unidades
+| Symbol  | Decimal  |
+| ------- | -------- |
+| I       |    1     |
+| V       |    5     |
+| X       |   10     |
+| L       |   50     |
+| C       |  100     |
+| D       |  500     |
+| M       | 1000     |
+
+
+## La conversión
+| Decimal  | Symbol   |
+| -------- | -------- |
+| 1        | I        |
+| 2        | II       |
+| 3        | III      |
+| 4        | IV       |
+| 5        | V        |
+| 6        | VI       |
+| 7        | VII      |
+| 8        | VIII     |
+| 9        | IX       |
+| 10       | X        |
+| 11       | XI       |
+| 12       | XII      |
+| 13       | XII      |
+| 14       | XIV      |
+| 15       | XV       |
+| 16       | XVI      |
+| 17       | XVII     |
+| 18       | XVIII    |
+| 19       | XIX      |
+| 20       | XX       |
+
 # Base para hacer tests
 
 Configuración básica para empezar a hacer una kata o aprender a hacer tests en los siguientes lenguajes:
