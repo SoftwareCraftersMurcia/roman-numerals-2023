@@ -2,6 +2,12 @@
 
 ![image](https://github.com/SoftwareCraftersMurcia/roman-numerals-2023/assets/62811755/0fda1283-ea7d-4ae3-9346-431d58990cc7)
 
+```java
+interface DecimalToRoman {
+   public String convert(int decimal);
+}
+```
+
 ## Las unidades
 | Symbol  | Decimal  |
 | ------- | -------- |
