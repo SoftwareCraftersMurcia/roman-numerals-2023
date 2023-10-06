@@ -13,6 +13,9 @@ class RomanNumerals {
             case 50:
                 return 'L';
                 break;
+            case 100:
+                return 'C';
+                break;
         }
   };
 
