@@ -1,6 +1,6 @@
 class RomanNumerals {
      convertNumerals = () => {
-    return true;
+    return 'I';
   };
 
 }
