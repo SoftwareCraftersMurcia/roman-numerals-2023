@@ -2,8 +2,8 @@ const toRomanNumber = (inputNumber) => {
     if(inputNumber === 4) { return "IV" }
     if(inputNumber === 9) { return "IX" }
 
-    if(inputNumber === 10) {
-        return "X"
+    if(inputNumber >= 10) {
+        return "X" + "I".repeat(inputNumber - 10)
     }
 
     if(inputNumber >= 5) {
