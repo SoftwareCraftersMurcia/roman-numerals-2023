@@ -15,4 +15,9 @@ describe("Kata", function () {
     let romanNumerals = new RomanNumerals();
     expect(romanNumerals.convertNumerals(10)).toBe('X');
   });
+
+  it("converts number 50 to roman numerals", function () {
+    let romanNumerals = new RomanNumerals();
+    expect(romanNumerals.convertNumerals(50)).toBe('L');
+  });
 });
