@@ -1,12 +1,19 @@
 class RomanNumerals {
      convertNumerals = (number) => {
-        if (number === 1) {
-          return 'I';   
-        } else if (number === 5) {
-            return 'V'; 
-        } else if (number === 10) {
-            return 'X';
-        } 
+        switch (number) {
+            case 1:
+                return 'I';
+                break;
+            case 5:
+                return 'V';
+                break;
+            case 10:
+                return 'X';
+                break;
+            case 50:
+                return 'L';
+                break;
+        }
   };
 
 }
