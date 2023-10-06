@@ -1,24 +1,14 @@
 const { toRomanNumber } = require('../src/kata');
 
 describe("toRomanNumber", function () {
-
-  it("should translate 1 to I", function () {
-    const romanNumber = toRomanNumber(1)
-    expect(romanNumber).toBe("I");
-  });
-
-  it("should translate 2 to II", function () {
-    const romanNumber = toRomanNumber(2)
-    expect(romanNumber).toBe("II");
-  })
-
-  it("should translate 3 to III", function () {
-    const romanNumber = toRomanNumber(3)
-    expect(romanNumber).toBe("III");
-  })
-
-  it("should translate 4 to IV", function () {
-    const romanNumber = toRomanNumber(4)
-    expect(romanNumber).toBe("IV");
+  it.each`
+    decimalNumber | expectedRomanNumber
+    ${1} | ${"I"}
+    ${2} | ${"II"}
+    ${3} | ${"III"}
+    ${4} | ${"IV"}
+  `('should translate $decimalNumber to $expectedRomanNumber', ({decimalNumber, expectedRomanNumber}) => {
+    const romanNumber = toRomanNumber(decimalNumber)
+    expect(romanNumber).toBe(expectedRomanNumber);
   })
 });
