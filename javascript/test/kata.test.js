@@ -20,4 +20,9 @@ describe("Kata", function () {
     let romanNumerals = new RomanNumerals();
     expect(romanNumerals.convertNumerals(50)).toBe('L');
   });
+
+  it("converts number 100 to roman numerals", function () {
+    let romanNumerals = new RomanNumerals();
+    expect(romanNumerals.convertNumerals(100)).toBe('C');
+  });
 });
