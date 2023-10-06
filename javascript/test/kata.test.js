@@ -12,6 +12,8 @@ describe("Roman numbers", function () {
     expect(romanNumber).toBe("II");
   })
 
+  test("3 is translated to III", function () {
+    const romanNumber = toRomanNumber(3)
+    expect(romanNumber).toBe("III");
+  })
 });
-
-
