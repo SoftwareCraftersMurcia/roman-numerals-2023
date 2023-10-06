@@ -57,5 +57,10 @@ class DecimalToRomanTest extends TestCase
             'roman' => 'VII',
             'decimal' => 7,
         ];
+
+        yield 'nine' => [
+            'roman' => 'IX',
+            'decimal' => 9,
+        ];
     }
 }
