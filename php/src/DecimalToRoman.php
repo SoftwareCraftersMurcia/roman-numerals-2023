@@ -27,6 +27,12 @@ class DecimalToRoman
 
     private function concatI(int $decimal): string
     {
-        return str_repeat('I', $decimal);
+        $number = '';
+
+        for ($n = 0; $n < $decimal; $n++) {
+            $number .= 'I';
+        }
+
+        return $number;
     }
 }
