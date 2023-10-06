@@ -16,4 +16,14 @@ class DecimalToRomanTest extends TestCase
 
         self::assertSame("I", $result);
     }
+
+    /** @test */
+    public function should_convert_2_II(): void
+    {
+        $converter = new DecimalToRoman();
+
+        $result = $converter->convert(2);
+
+        self::assertSame("II", $result);
+    }
 }
