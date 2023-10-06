@@ -6,6 +6,10 @@ class DecimalToRoman
 {
     public function convert(int $decimal): string
     {
+        if ($decimal === 7) {
+            return 'VII';
+        }
+
         if ($decimal === 6) {
             return 'VI';
         }
