@@ -1,11 +1,5 @@
 const toRomanNumber = (inputNumber) => {
-    if (inputNumber === 1){
-        return "I"
-    }
-    if (inputNumber === 3){
-        return "III"
-    }
-    return "II";
+    return "I".repeat(inputNumber)
 };
 
 module.exports = {toRomanNumber};
