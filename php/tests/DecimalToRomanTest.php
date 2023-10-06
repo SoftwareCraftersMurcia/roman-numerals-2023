@@ -37,4 +37,12 @@ class DecimalToRomanTest extends TestCase
 
         self::assertSame("III", $result);
     }
+
+    /** @test */
+    public function should_convert_4_IV(): void
+    {
+        $result = $this->converter->convert(4);
+
+        self::assertSame("IV", $result);
+    }
 }
