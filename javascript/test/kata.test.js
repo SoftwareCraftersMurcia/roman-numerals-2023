@@ -10,4 +10,9 @@ describe("Kata", function () {
     let romanNumerals = new RomanNumerals();
     expect(romanNumerals.convertNumerals(5)).toBe('V');
   });
+
+  it("converts number 10 to roman numerals", function () {
+    let romanNumerals = new RomanNumerals();
+    expect(romanNumerals.convertNumerals(10)).toBe('X');
+  });
 });
