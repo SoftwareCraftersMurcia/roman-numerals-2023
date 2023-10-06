@@ -16,4 +16,9 @@ describe("toRomanNumber", function () {
     const romanNumber = toRomanNumber(3)
     expect(romanNumber).toBe("III");
   })
+
+  it("should translate 4 to IV", function () {
+    const romanNumber = toRomanNumber(4)
+    expect(romanNumber).toBe("IV");
+  })
 });
