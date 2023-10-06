@@ -7,12 +7,17 @@ use PHPUnit\Framework\TestCase;
 
 class DecimalToRomanTest extends TestCase
 {
+    protected DecimalToRoman $converter;
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->converter = new DecimalToRoman();
+    }
+
     /** @test */
     public function should_convert_1_I(): void
     {
-        $converter = new DecimalToRoman();
-
-        $result = $converter->convert(1);
+        $result = $this->converter->convert(1);
 
         self::assertSame("I", $result);
     }
@@ -20,9 +25,7 @@ class DecimalToRomanTest extends TestCase
     /** @test */
     public function should_convert_2_II(): void
     {
-        $converter = new DecimalToRoman();
-
-        $result = $converter->convert(2);
+        $result = $this->converter->convert(2);
 
         self::assertSame("II", $result);
     }
@@ -30,9 +33,7 @@ class DecimalToRomanTest extends TestCase
     /** @test */
     public function should_convert_3_III(): void
     {
-        $converter = new DecimalToRoman();
-
-        $result = $converter->convert(3);
+        $result = $this->converter->convert(3);
 
         self::assertSame("III", $result);
     }
