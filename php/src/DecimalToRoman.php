@@ -6,17 +6,7 @@ class DecimalToRoman
 {
     public function convert(int $decimal): string
     {
-        if ($decimal === 7) {
-            return 'VII';
-        }
-
-        if ($decimal === 6) {
-            return 'VI';
-        }
-
-        if ($decimal === 5) {
-            return 'V';
-        }
+        if ($decimal >= 5) return 'V' . $this->concatI($decimal - 5);
 
         if ($decimal === 4) {
             return 'IV';
