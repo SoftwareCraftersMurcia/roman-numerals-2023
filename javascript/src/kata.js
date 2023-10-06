@@ -1,5 +1,9 @@
-const renameMe = () => {
+class RomanNumerals {
+     convertNumerals = () => {
     return true;
-};
+  };
 
-module.exports = {renameMe};
+}
+
+
+module.exports = {RomanNumerals};
