@@ -5,4 +5,9 @@ describe("Kata", function () {
       let romanNumerals = new RomanNumerals();
       expect(romanNumerals.convertNumerals(1)).toBe('I');
   });
+
+  it("converts number 5 to roman numerals", function () {
+    let romanNumerals = new RomanNumerals();
+    expect(romanNumerals.convertNumerals(5)).toBe('V');
+  });
 });
