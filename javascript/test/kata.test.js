@@ -10,6 +10,7 @@ describe("toRomanNumber", function () {
     ${5} | ${"V"}
     ${6} | ${"VI"}
     ${7} | ${"VII"}
+    ${8} | ${"VIII"}
   `('should translate $decimalNumber to $expectedRomanNumber', ({decimalNumber, expectedRomanNumber}) => {
     const romanNumber = toRomanNumber(decimalNumber)
     expect(romanNumber).toBe(expectedRomanNumber);
