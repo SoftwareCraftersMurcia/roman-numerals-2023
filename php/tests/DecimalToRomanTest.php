@@ -7,42 +7,40 @@ use PHPUnit\Framework\TestCase;
 
 class DecimalToRomanTest extends TestCase
 {
-    protected DecimalToRoman $converter;
-    public function setUp(): void
+    /**
+     * @test
+     *
+     * @dataProvider decimalToRomanNumbersProvider
+     */
+    public function should_convert(string $roman, int $decimal): void
     {
-        parent::setUp();
-        $this->converter = new DecimalToRoman();
+        $converter = new DecimalToRoman();
+
+        $result = $converter->convert($decimal);
+
+        self::assertSame($roman, $result);
     }
 
-    /** @test */
-    public function should_convert_1_I(): void
+    public function decimalToRomanNumbersProvider(): iterable
     {
-        $result = $this->converter->convert(1);
+        yield 'one' => [
+            'roman' => 'I',
+            'decimal' => 1,
+        ];
 
-        self::assertSame("I", $result);
-    }
+        yield 'two' => [
+            'roman' => 'II',
+            'decimal' => 2,
+        ];
 
-    /** @test */
-    public function should_convert_2_II(): void
-    {
-        $result = $this->converter->convert(2);
+        yield 'three' => [
+            'roman' => 'III',
+            'decimal' => 3,
+        ];
 
-        self::assertSame("II", $result);
-    }
-
-    /** @test */
-    public function should_convert_3_III(): void
-    {
-        $result = $this->converter->convert(3);
-
-        self::assertSame("III", $result);
-    }
-
-    /** @test */
-    public function should_convert_4_IV(): void
-    {
-        $result = $this->converter->convert(4);
-
-        self::assertSame("IV", $result);
+        yield 'four' => [
+            'roman' => 'IV',
+            'decimal' => 4,
+        ];
     }
 }
