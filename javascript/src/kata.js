@@ -1,6 +1,10 @@
 class RomanNumerals {
-     convertNumerals = () => {
-    return 'I';
+     convertNumerals = (number) => {
+        if (number === 1) {
+          return 'I';   
+        } else if (number === 5) {
+            return 'V'; 
+        }
   };
 
 }
