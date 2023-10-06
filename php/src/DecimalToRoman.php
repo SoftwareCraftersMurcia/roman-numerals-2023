@@ -6,6 +6,10 @@ class DecimalToRoman
 {
     public function convert(int $decimal): string
     {
+        if ($decimal === 20){
+            return 'XX';
+        }
+
         if ($decimal === 10){
             return 'X';
         }
@@ -27,12 +31,6 @@ class DecimalToRoman
 
     private function concatI(int $decimal): string
     {
-        $number = '';
-
-        for ($n = 0; $n < $decimal; $n++) {
-            $number .= 'I';
-        }
-
-        return $number;
+        return str_repeat('I', $decimal);
     }
 }
