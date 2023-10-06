@@ -1,18 +1,18 @@
 const { toRomanNumber } = require('../src/kata');
 
-describe("Roman numbers", function () {
+describe("toRomanNumber", function () {
 
-  test("1 is translated to I", function () {
+  it("should translate 1 to I", function () {
     const romanNumber = toRomanNumber(1)
     expect(romanNumber).toBe("I");
   });
 
-  test("2 is translated to II", function () {
+  it("should translate 2 to II", function () {
     const romanNumber = toRomanNumber(2)
     expect(romanNumber).toBe("II");
   })
 
-  test("3 is translated to III", function () {
+  it("should translate 3 to III", function () {
     const romanNumber = toRomanNumber(3)
     expect(romanNumber).toBe("III");
   })
