@@ -6,8 +6,11 @@ class DecimalToRoman
 {
     public function convert(int $decimal): string
     {
+        if ($decimal === 10){
+            return 'X';
+        }
 
-        if ($decimal === 9){ 
+        if ($decimal === 9){
             return 'IX';
         }
 
