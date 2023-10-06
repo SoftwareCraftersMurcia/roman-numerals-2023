@@ -4,18 +4,10 @@ const toRomanNumber = (inputNumber) => {
         return "IV"
     }
 
-    if(inputNumber === 5) {
-        return "V"
+    if(inputNumber >= 5) {
+        return "V" + "I".repeat(inputNumber - 5)
     }
 
-    if(inputNumber === 6) {
-        return "VI"
-    }
-
-    if(inputNumber === 7) {
-        return "VII"
-    }
-    
     return "I".repeat(inputNumber)
 };
 
