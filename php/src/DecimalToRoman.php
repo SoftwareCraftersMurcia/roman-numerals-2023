@@ -6,6 +6,6 @@ class DecimalToRoman
 {
     public function convert(int $decimal): string
     {
-        return "";
+        return "I";
     }
 }
